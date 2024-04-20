@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/submit" method="get">
+        <label for="username">Username :</label>
+        <input type="text" id="username" class="username" required autofocus>
+<br><br>
+        <label for="password">Password :</label>
+        <input type="password" name="password" id="password" class="password" pattern="[a-zA-Z0-9]" required>
+<br><br>
+<!-- Radio button for gender         -->
+<label for="mygender">Gender : </label>
+<input type="radio" name="mygender" id="mygender" value="male">
+<label for="male">Male</label>
+<input type="radio" name="mygender" id="mygender" value="female">
+<label for="female">Female</label>
+<br><br>
+
+<!-- textarea -->
+<textarea name="comment" cols="30" rows="10">feedback...</textarea>
+<br><br>
+
+<select name="cars">
+    <option value="maruti">Maruti</option>
+    <option value="BMW">BMW</option>
+    <option value="ferrari">Ferrari</option>
+</select>
+
+<br><br>
+<input type="submit" value="submit">
+    </form>
+</body>
+</html>
