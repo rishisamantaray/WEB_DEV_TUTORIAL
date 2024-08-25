@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* elemenet selector  */
+        div {
+            background-color: beige;
+        }
+
+        /* class selector */
+        .firstdiv {
+            background-color: aqua;
+            color: blueviolet;
+        }
+
+        .seconddiv {
+            background-color: red;
+            color: brown;
+        }
+
+        /* id selector         */
+        #div1 {
+            background-color: azure;
+        }
+
+        #div2 {
+            background-color: yellow;
+        }
+
+        /* child selector */
+        div>p {
+            background-color: antiquewhite;
+        }
+
+        /* descendant selector */
+        div em {
+            background-color: blueviolet;
+        }
+
+        /* for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* pseudo selector  */
+        a:hover {
+            color: red;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        p:first-child{
+            background-color: black;
+            color: aqua;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main class="one">
+<p>this is one</p>
+<p>this is two</p>
+    </main>
+
+
+    <div class="firstdiv" id="div1">
+        i am a div.
+        <p>
+            Lorem ipsum dolor <em> sit amet</em>, consectetur adipisicing elit. Doloribus doloremque dolorum eaque?
+        </p>
+
+    </div>
+    <div class="seconddiv" id="div2">
+        i am seconf div.
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus doloremque dolorum eaque?
+        </p>
+    </div>
+
+    <a href="http://google.com">google.com</a>
+</body>
+
+</html>

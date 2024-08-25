@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        /* to set global variable */
+        /* variables is not only for color u can apply var for other elements too  */
+        :root{
+            /* --color: blue; */
+            --seccolor: red;
+        }
+
+        .nav{
+            background-color:green;
+           color: var(--seccolor);
+        }
+        .container{
+            /* local variable */
+            /* --color:violet; */
+            background-color: lightgreen;
+            color: var(--color,green);
+            /* if '--color' var is not present then give another option  */
+            
+        }
+
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, aspernatur minus! Corrupti repudiandae
+        ut mollitia earum nam labore ex amet aut eligendi, ipsa fuga ullam doloribus sunt repellendus ratione quo? Eaque
+        esse similique molestiae magni amet natus nemo eligendi perspiciatis enim architecto pariatur, quae id!
+    </div>
+</body>
+
+</html>

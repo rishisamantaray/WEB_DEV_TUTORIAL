@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise3</title>
+<style>
+:root{
+    --color: blue;
+    --seccolor: cyan;
+    --thirdcol:pink;
+}
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: var(--color);
+    }
+    nav{
+        margin: 2px;
+        padding: 2px;
+      
+    }
+nav ul{
+    background-color: var(--seccolor);
+    margin: 4px;
+    padding: 6px;
+    /* border: 2px solid; */
+    list-style: none;
+    display: flex;
+    
+}
+li{
+    margin: 3px;
+    padding: 6px;
+    
+}
+
+
+@media only screen and (orientation:portrait) {
+    body{
+        background-color: var(--thirdcol,green);
+    }
+    nav{
+        background-color: var(--seccolor,red);
+        flex-direction: column;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">About</a></li>
+        </ul>
+
+    </nav>
+
+
+</body>
+</html>

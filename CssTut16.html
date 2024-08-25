@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+.container{
+border: 2px solid;
+height: 400px;
+display: flex;
+/* this means u can use flexbox properties now . */
+justify-content: center;
+/* align-items: center; */
+/* when only one line is present to align then use align items or else use align content for multiple lines and use flex wrap as well.  */
+/* flex-direction: column; */
+/* this will change direction of items.. columns to row /rows to column  */
+/* flex direction usually left to right , but we can make it top to bottom, and reverse also.  */
+
+/* ----> left to right > main axis
+----> top to bottom > cross axis  */
+
+/* flex-wrap: wrap; */
+
+/* align-content: center; */
+/* but there is no justify-items: in flexbox */
+
+flex-flow: row wrap;
+/* this config can take flexdirectiona and flexwrap property in one config.  */
+
+/* gap:30px;
+column-gap: 5px;
+row-gap: 50px; */
+/* gap:10px  50px ; */
+
+
+}
+.item{
+    /* flex-grow: 1; */
+    /* bydefault flex grow default val is 0 */
+    height: 64px;
+    width: 64px;
+    border: 2px solid;
+    margin: 4px;
+    background-color: blueviolet;
+    /* display: inline-block; */
+
+}
+
+
+.order-1{
+    order: 1;
+}
+
+.order-2{
+    order: 2;
+}
+
+
+.order-3{
+    order: 3;
+}
+
+
+
+.item1{
+    /* flex-grow: 3; */
+   /* this class element will take width of 3 normal elements */
+    /* flex-shrink: 2; */
+    /* this class element will shrink with 2x speed than other elements.  */
+align-self: flex-end;
+}
+.item2{
+    align-self: flex-end;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-3 item1">1</div>
+            <div class="item order-2">2</div>
+            <div class="item">3</div>
+            <div class="item"></div>
+            <div class="item item2"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>         
+        </div>
+    </main>
+</body>
+</html>

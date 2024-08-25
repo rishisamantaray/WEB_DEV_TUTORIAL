@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+
+    <style>
+body{
+    background-color: green;
+}
+
+.boxes{
+    display: flex; 
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    margin: 3px;
+    padding: 3px;
+   
+   
+}
+/* media query>used for responsive design  */
+
+@media only screen and (orientation:portrait)
+{
+    body{
+        background-color: aqua;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+/* 
+@media not|only mediatype and (expresions) {
+CSS-Code;
+}
+*/
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+    <div class="box">this is box</div>
+    <div class="box">this is box</div><div class="box">this is box</div>
+    <div class="box">this is box</div>
+</div>
+</body>
+</html>

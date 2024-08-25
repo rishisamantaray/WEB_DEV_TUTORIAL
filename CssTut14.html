@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float and clear</title>
+    <style>
+        img{
+            float: left;
+            /* image will shift to left and content will go to side of image, mostly used for blogging pages.  */
+        }
+        .cards{
+            border: 2px solid blue ;
+/* overflow: auto; */
+/* similar work as display: flow-root; */
+            display: flow-root;
+            /* sometimes images or content get out of the box/container, so to hold it inside the container we use "display: flow-root;"  */
+        }
+        .card{
+            border: 2px solid;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: left;
+            /* for this element/class, no other content should show at left/right/both.  */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://th.bing.com/th?id=OIP.GPFEY6kfgxbsja6gmrW6rwHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+         alt="mountain-image" >
+        <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius magnam aperiam, minima commodi similique temporibus animi quisquam reprehenderit ad vitae, natus maiores tempora voluptatem quae ex! Quis ad dolorem odit numquam nesciunt reprehenderit! Sint.</div>
+        <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae cupiditate facere quasi obcaecati odio inventore eum quibusdam maxime non recusandae dolores, quae blanditiis earum voluptas sapiente optio accusamus. Eos incidunt mollitia dolorum at fuga qui assumenda recusandae voluptas optio officia consectetur dolores accusamus maxime voluptatem vel saepe, quidem ipsa aliquam nemo natus! Unde dolorum debitis veritatis voluptates quaerat? Dolorum dolorem repudiandae, ratione iure sit omnis hic eligendi voluptate officiis at, eaque dignissimos doloribus, tempora consequuntur. Doloremque optio vel magnam asperiores, assumenda corporis, commodi repellat voluptatum inventore sapiente modi dolorem repudiandae sequi excepturi. Laboriosam nostrum aperiam at cumque modi maiores deleniti fuga, laborum, facere ratione dignissimos quis accusantium debitis reiciendis quos molestias tenetur, excepturi consequatur consectetur repudiandae veniam. Modi dolore qui quis similique aliquid repellat doloribus ipsam eveniet hic, debitis, minima sapiente iusto suscipit eum quos quo inventore sed optio eaque quod velit. Reiciendis eaque vel earum, sint quod esse laborum ducimus ea tempore perferendis officia dignissimos animi fugiat. Repellat atque eligendi accusamus eaque inventore quibusdam voluptatibus esse doloremque quaerat labore reiciendis ut voluptates veritatis quae, quo iure fuga similique debitis minima commodi officia nobis porro a at? Officiis, odit? Porro aliquam cupiditate recusandae, quisquam deleniti voluptatum ut architecto voluptatibus corporis doloribus iste fugiat mollitia rem in adipisci laudantium nobis accusamus eius commodi exercitationem, pariatur ab perspiciatis ratione voluptas? Sequi necessitatibus reprehenderit quam nihil odio ex nam nesciunt facere quas accusamus doloremque aperiam vitae velit, saepe quasi adipisci aliquid officia consectetur praesentium natus fuga. Eveniet iure soluta consectetur inventore modi vero labore! Molestias necessitatibus reiciendis accusamus ipsam ullam ea inventore ab vitae illo enim autem impedit, consequatur id quis perspiciatis cum molestiae beatae? Iste voluptas doloremque quidem, nostrum praesentium perspiciatis nihil mollitia quasi itaque aperiam fugit. Est in rerum, corrupti aliquam nesciunt placeat eaque id laboriosam exercitationem perferendis dolorum dolore ad.</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>

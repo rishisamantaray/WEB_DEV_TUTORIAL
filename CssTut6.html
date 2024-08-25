@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            /* root element */
+            font-size: 11px;
+        }
+        .box {
+            margin: auto;
+            padding: 0;
+            border: 2px solid red;
+            /* width: 1366px; */
+            /* pixel> 196th of an inch.  */
+            width: 80vw;
+            height: 10vh;
+            /* vw-view port width  */
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+        .contain{
+            box-sizing: border-box;
+            border: 2px solid red;
+            width: 80vw;
+            min-width: 80vw;
+            height: 40vh;
+            background-color: aqua;
+            margin:16px auto;
+            font-size: 12px;
+            min-height: 80vh;
+        }
+
+        .contain p{
+ /* font-size: 1em; */
+/*/bydefault fon-size is inherited from parent class/element, but if we add 'em' then it will be multiplied with the inherited value
+//here in this case 18px*2em=36px. */
+
+/* font-size: 2rem; */
+/* //rem.. we use this,if we don't want to inherit root element's font size property  */
+/* width: 50%; */
+/* //it will take 50% width of parent element    */
+}
+
+.mycont{
+    box-sizing: border-box;
+    margin:auto;
+    background-color: blueviolet;
+    color: blanchedalmond;
+    font-size: 20px;
+    width: 80vh;
+  
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        this is box
+    </div>
+
+    <div class="contain">
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequuntur, eveniet eum officia non iusto
+        tenetur rerum, quaerat quis labore tempore! Architecto consequuntur reiciendis animi odit? Iste voluptates ipsa
+        rerum cumque ex natus molestias placeat error temporibus! Incidunt blanditiis aperiam voluptatum reprehenderit
+        dolor est nostrum atque? Adipisci delectus deserunt nesciunt accusantium nisi doloribus non quasi mollitia.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate nostrum provident illum cupiditate perspiciatis blanditiis minima inventore similique necessitatibus dolores. Culpa, impedit. Sequi aut minima beatae laborum cum, unde, sed aspernatur facere fugiat, vero dicta expedita! Voluptas, optio. Sit ea excepturi dignissimos, pariatur illum odit corporis temporibus ipsam cumque dolorum. Nostrum aliquam veritatis eos aut nihil quam ullam, tenetur placeat quasi laudantium est, dolorem natus totam quos autem excepturi, id vero officia molestias asperiores facere? Totam autem nam voluptatibus dolor amet facere iure commodi sequi? Et voluptatibus fugit aliquam rerum accusamus veritatis fugiat iusto consequuntur, sint repellendus earum, recusandae amet mollitia rem aperiam quam labore? Numquam aliquam autem quam quae labore officia nobis, repudiandae deleniti eligendi. Quae quidem fugit tempore.
+    lorem999
+    </p>
+</div>
+
+<div class="mycont">
+    i'm another container.
+</div>
+
+</body>
+
+</html>

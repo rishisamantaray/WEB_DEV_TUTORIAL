@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice</title>
+    <style>
+        .container{
+            border: 1px solid;
+            height: 200px;
+            display: grid;
+          grid-template-areas: "nav nav nav" 
+                            "side empty article"
+                             "footer footer footer";
+        }
+
+        .box{
+            /* height: 60px; */
+            border: 1px solid red;
+        }
+
+        .box1{
+            grid-area: nav;
+            background-color: aqua;
+        }
+        .box2{
+            background-color: greenyellow;
+            grid-area: side;
+            /* grid-area: aritcle; */
+        }
+        .box3{
+            grid-area: article;
+            background-color: blue;
+        }
+        .box4{
+            grid-area: footer;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div> 
+    </div>
+</body>
+</html>

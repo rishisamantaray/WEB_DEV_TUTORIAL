@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar using flexbox</title>
+    <style>
+nav{
+    display: flex;
+    /* border: 2px solid; */
+    justify-content: space-evenly;
+    align-items:center;
+    /* gap: 200px 200px; */
+}
+
+ ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 16px;
+}
+.logo{
+    /* border: 2px solid; */
+    height: 40px;width: 40px;
+    background-image: url(image.jfif);
+    border-radius: 100%;
+    text-align: center;
+    padding: 12px;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+        </div>
+            <div class="menutab">
+                <ul>
+                    <li>Home</li>
+                    <li>Courses</li>
+                    <li>Product</li>
+                    <li>About</li>
+                </ul>
+            </div>
+    </nav>
+</body>
+
+</html>

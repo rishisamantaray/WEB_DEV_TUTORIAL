@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            display: flex;            
+            flex-direction: column;
+            background-color: aquamarine;
+            justify-content: center;
+            flex-flow: column wrap;
+            align-content: center;
+        }
+        .container{
+            display: flex;
+            border: 2px solid;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 500px;
+            background-color: darkcyan;
+        }
+        .container form{
+            display: flex;
+            /* border: 2px solid; */
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        input{
+            width: 200px;
+            height: 20px;
+            padding: 4px;
+            margin: 3px;
+            text-align: center;
+        }
+        .buttons{
+            padding: 3px;
+            margin: 6px;
+        }
+    </style>
+</head>
+<body> 
+    <h3 style="text-align: center;">Login Page</h3>
+    <div class="container">
+        <form action="" method="post">
+            <input type="text" placeholder="Your Name"> 
+            <input type="email" name="" id="" placeholder="Your E-mail">
+            <input type="password" name="" id="" placeholder="Your password">
+            <input type="password" name="" id="" placeholder="Reconfirm password">
+            
+        </form>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </div>
+</body>
+</html>

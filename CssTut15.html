@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        .box:first-child{
+        /* ::first-line/:first-child */
+            background-color: red;
+        }
+
+        .boxes *{ 
+            /* all elements inside the 'boxes' class */
+            border: 2px solid ;
+        }
+
+        em,div,[data-color="primary"]{
+            /* grouping of selectors */
+            /* //attribute selector */
+            background-color: aqua;
+            font-weight:bolder ;
+        }
+
+        .box:nth-child(even){
+            background-color: bisque;
+        }
+
+        .boxes::before{
+            /* pseudo elements not selectors */
+            /* we can manually add content with the help of CSS. */
+            content: "this is me,Rishi.";
+        }
+        em::after{
+            content: "this is me ,rishi";
+        }
+        
+        ::selection{
+            background-color: blueviolet;
+        }
+        input::placeholder{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">hey im a box</div>
+        <div class="box">hey im a box</div>
+        <div data-color="primary" class="box">hey im a box</div>
+        <div class="box">hey im a box</div>
+    </div>
+    <em data-color="primary">this is em.</em>
+
+    <input type="text" name="" placeholder="type your name here">
+</body>
+</html>

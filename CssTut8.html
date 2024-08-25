@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow prop</title>
+<style>
+    div{
+        border: 2px dotted black;
+        width: 200px;
+        height: 200px;
+        display: inline;
+        box-sizing: border-box;
+        justify-content: center;
+        box-shadow:5px 5px 10px green;
+    }
+    p{
+        text-shadow: 2px 2px 10px red;
+        outline: 2px solid;
+        /* outline is not a part of box model  */
+        outline-offset: 2px ;
+        border: 2px solid red;
+        border-radius: 5px;
+        /* ouline radius is depend on border radius  */
+    }
+
+</style>
+</head>
+
+<body>
+    <div>
+        this is a shadow box.
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, eaque vitae aliquid perferendis optio nostrum magnam, cum amet eveniet necessitatibus porro qui. Laboriosam quod explicabo enim expedita, possimus similique provident laborum.
+    </p>
+</body>
+</html>

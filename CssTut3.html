@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .div{
+            background-color: aqua;
+        }
+
+        .div1{
+            color: brown;
+            padding: 10px;
+            margin: 4px;
+            border: 2px solid;
+            /* includes height border and padding, it chnages height's defination */
+            height: 100px;
+            box-sizing: border-box; 
+        }
+        .div2{
+            color: yellow;
+            padding: 10px;
+            margin: 4px;
+            border: 2px solid;
+            /* includes height border and padding, it chnages height's defination */
+            height: 100px;
+            box-sizing: border-box; 
+
+            /* margin colapse: in box1 and box2, for whichever box's margin is  greater, then it will be collapsed with another. */
+        }
+    </style>
+</head>
+<body>
+    <div class="div div1">
+        i'm a Div.
+    </div>
+    <div class="div div2">
+        i'm a Div2.
+    </div>
+</body>
+</html>

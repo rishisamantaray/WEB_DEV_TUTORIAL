@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity and cascading</title>
+    <style>
+        /* cascade algorithm>> for specificity. */
+        /* specificity override rule  */
+        /* inline style>id selector> class/attribute selector>elementselector */
+
+        /* user agent style sheet> browser's own stylesheet */
+/*  *> 0
+element/pseudo>1
+class/attribute>10
+id>100
+inline>1000
+and if important added then specificity increase to 10000.
+*/
+
+        #divid {
+            color: yellow;
+        }
+
+        .div1 {
+            color: blue;
+        }
+
+        div {
+            color: aqua;
+        }
+
+        .div2 {
+            color: blueviolet !important;
+            /* "!important"> if this attribute is set then nothing will be chked  */
+        }
+
+        .div3 {
+            color: chocolate;
+        }
+
+        /* [data-a=a]{
+            color: teal;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="div1 div2 div3" id="divid" data-a="a">
+        <!-- <div style="color: cornflowerblue;" class="div1 div2 div3" id="divid"> -->
+        this is div.
+    </div>
+</body>
+
+</html>

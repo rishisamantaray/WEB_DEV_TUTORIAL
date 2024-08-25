@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        
+        .parent{
+            border: 2px solid green;
+            padding: 20px;
+            margin: 40px;
+            /* position: absolute; */
+             /* transform,filter or perspective properties can also make a
+       an element appear as positioned */
+            /* >>as an exception these works, considered as positioned  */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+        }
+        .box{
+            height: 40vh;
+            width: 60vw;
+            padding: 3px;
+            margin: 6px;
+            border: 2px solid black;
+        }
+        /* bydefault position is static, means top,bottom,left,rigth,z-index can't be changed */
+       /* position: absolute; it finds its nearest parent's position, if parent's positioned then it alligns itself with parents values */
+      
+       .box1{
+background-color: aqua;
+/* position: absolute; */
+top: 0px;
+left: 0px;
+ position: sticky;   
+/*top: 0px;
+height: 100px;
+width: 100%; */
+        }
+        .box2{
+background-color: aquamarine;
+/* position: relative; */
+/* position: absolute;
+top: 5px;
+left: 34px; */
+        }
+        .box3{
+background-color: olivedrab;
+/* position: relative; */
+/* z-index: 1; */
+}
+        .box4{
+background-color: yellowgreen;
+/* position: fixed;
+bottom: 0px;
+right: 35vw;
+height: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="box box1">this is a box.</div>
+    <div class="box box2">this is a box.</div>
+    <div class="box box3">this is a box.</div>
+    <div class="box box4">this is a box.</div>
+</div>
+</body>
+</html>
